@@ -2,7 +2,7 @@
 
 public class Tests
 {
-    private AsyncLocal<object> asyncLocal = new();
+    static AsyncLocal<object> asyncLocal = new();
 
     public Tests()
     {
