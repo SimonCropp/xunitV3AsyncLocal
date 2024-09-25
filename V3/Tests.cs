@@ -4,14 +4,10 @@ public class Tests
 {
     static AsyncLocal<object> asyncLocal = new();
 
-    public Tests()
-    {
+    public Tests() =>
         asyncLocal.Value = new();
-    }
 
     [Fact]
-    public void Test()
-    {
+    public void Test() =>
         Assert.NotNull(asyncLocal.Value);
-    }
 }
